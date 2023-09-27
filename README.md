@@ -42,7 +42,30 @@ Asegúrate de tener instalado Node.js en tu sistema. Puedes descargarlo desde [n
    }
    ```
 
-   Puedes utilizar herramientas como Postman o curl para realizar la solicitud de prueba.
+  > Puedes utilizar herramientas como Postman o curl para realizar la solicitud de prueba.
+
++ Utilizar `curl` para realizar una solicitud de prueba a tu servidor de ejemplo. `curl` es una herramienta de línea de comandos que permite enviar solicitudes HTTP desde la terminal. Aquí te muestro cómo realizar una solicitud POST de prueba utilizando `curl`:
+
+Suponiendo que tu servidor de ejemplo está en ejecución en `http://localhost:3000` y deseas enviar datos de usuario a la ruta `/api/user-data`.
+
+```bash
+curl -X POST -H "Content-Type: application/json" -d '{
+  "nombre": "Nombre del Usuario",
+  "email": "correo@ejemplo.com",
+  "edad": 30
+}' http://localhost:3000/api/user-data
+```
+
+Desglose de la solicitud `curl`:
+
+- `-X POST`: Especifica que estamos realizando una solicitud POST.
+- `-H "Content-Type: application/json"`: Establece el encabezado `Content-Type` para indicar que estamos enviando datos en formato JSON.
+- `-d '...'`: Aquí incluimos los datos de usuario en formato JSON entre comillas simples.
+- `http://localhost:3000/api/user-data`: La URL de destino a la que se enviarán los datos.
+
+Al ejecutar este comando, `curl` enviará la solicitud POST al servidor de ejemplo con los datos de usuario proporcionados. Deberías recibir una respuesta del servidor, que en el código de ejemplo se establece en "Datos de usuario recibidos con éxito."
+
+Ten en cuenta que puedes personalizar los datos y la URL de destino según las necesidades de tu proyecto. `curl` es una herramienta versátil que te permite realizar diversas solicitudes HTTP para probar y depurar tu aplicación web.
 
 3. El servidor procesará los datos y los enviará al servicio de análisis simulado en el archivo `analyticsService.js`.
 
