@@ -46,7 +46,7 @@ Asegúrate de tener instalado Node.js en tu sistema. Puedes descargarlo desde [n
 
 + Utilizar `curl` para realizar una solicitud de prueba a tu servidor de ejemplo. `curl` es una herramienta de línea de comandos que permite enviar solicitudes HTTP desde la terminal. Aquí te muestro cómo realizar una solicitud POST de prueba utilizando `curl`:
 
-Suponiendo que tu servidor de ejemplo está en ejecución en `http://localhost:3000` y deseas enviar datos de usuario a la ruta `/api/user-data`.
+Supongamos que tu servidor de ejemplo está en ejecución en `http://localhost:3000` y deseas enviar datos de usuario a la ruta `/api/user-data`.
 
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{
