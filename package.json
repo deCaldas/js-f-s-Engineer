@@ -1,0 +1,16 @@
+{
+  "name": "interaction-between-web-application-and-data-analysis-system",
+  "version": "1.0.0",
+  "description": "This is a sample application that demonstrates how to collect user data from a web application and send it to an analytics service. The code provided is a basic and educational implementation, but can serve as a starting point for more complex projects.",
+  "main": "server.js",
+  "scripts": {
+    "test": "",
+    "start": "node server.js"
+  },
+  "author": "Diego Toro Cárdenas",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0"
+  }
+}
